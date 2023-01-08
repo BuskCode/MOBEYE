@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "161449535253",
+    "project_id": "mob-eye",
+    "storage_bucket": "mob-eye.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161449535253:android:699afd4cdafc562344eb1c",
+        "android_client_info": {
+          "package_name": "com.example.mob_eye"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161449535253-vfeifi7petqu1a0jcfpjmj09nn8lm03b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeLvBEFDFTKwt8NMk-PDJ4hp1KFK8xzmU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161449535253-vfeifi7petqu1a0jcfpjmj09nn8lm03b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
