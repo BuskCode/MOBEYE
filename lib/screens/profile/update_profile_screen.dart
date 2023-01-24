@@ -11,12 +11,16 @@ class UpdateProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+       appBar: AppBar(
         leading: IconButton(
             onPressed: () => Get.back(),
             icon: const Icon(LineAwesomeIcons.angle_left)),
-        title: Text('Rediger profil',
-            style: Theme.of(context).textTheme.headline4),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        iconTheme: IconThemeData(color: Colors.black),
+        actions: [
+          IconButton(onPressed: () {}, icon: Icon(Icons.shopping_cart))
+        ],
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -32,9 +36,7 @@ class UpdateProfileScreen extends StatelessWidget {
                       height: 120,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(100),
-                        child: Image(
-                          image: AssetImage(tProfileImage),
-                        ),
+                         child: Image.asset('lib/assets/images/MobEye_logo.jpg')
                       ),
                     ),
                     Positioned(

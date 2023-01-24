@@ -12,6 +12,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   String? errorMessage = '';
   bool isLogin = true;
+  bool passenable = true;
 
   // int _currentIndex = 0;
   // List<Widget> body = const [
@@ -58,15 +59,26 @@ class _LoginPageState extends State<LoginPage> {
     TextEditingController controller,
   ) {
     return TextField(
+      obscureText: passenable,
       controller: controller,
       decoration: InputDecoration(
-        labelText: title,
-      ),
+          labelText: title,
+          suffix: IconButton(
+            onPressed: () {
+              setState(() {
+                if (passenable) {
+                  passenable = false;
+                } else {
+                  passenable = true;
+                }
+              });
+            }, icon: Icon(passenable == true? Icons.remove_red_eye:Icons.password),
+          )), 
     );
   }
 
   Widget _errorMessage() {
-    return Text(errorMessage == '' ? '' : 'Humm ? $errorMessage');
+    return Text(errorMessage == '' ? '' : 'Hmm ? $errorMessage');
   }
 
   Widget _submitButton() {
@@ -92,8 +104,11 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: _title(),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        iconTheme: IconThemeData(color: Colors.black),
       ),
+      
       body: Container(
         height: double.infinity,
         width: double.infinity,

@@ -50,6 +50,7 @@ class CartPage extends StatelessWidget {
                       bottom: 10,
                     ),
                     child: Text(
+                      textAlign: TextAlign.center,
                       'Indkøbskurv',
                       style: TextStyle(
                         fontSize: 30,
@@ -90,7 +91,7 @@ class CartPage extends StatelessWidget {
                               //mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 Text(
-                                  'Briller',
+                                  'Blå Briller',
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
@@ -110,7 +111,14 @@ class CartPage extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                     color: Colors.red,
                                   ),
-                                )
+                                ),
+                                Text(
+                                  'Vare nr.: 5741000134894',
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
@@ -125,7 +133,7 @@ class CartPage extends StatelessWidget {
                               child: Column(
                                 children: [
                                   Icon(
-                                    CupertinoIcons.minus,
+                                    CupertinoIcons.plus,
                                     color: Colors.white,
                                   ),
                                   Text(
@@ -183,7 +191,7 @@ class CartPage extends StatelessWidget {
                               //mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 Text(
-                                  'Briller',
+                                  'Gule Briller',
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
@@ -203,7 +211,14 @@ class CartPage extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                     color: Colors.red,
                                   ),
-                                )
+                                ),
+                                Text(
+                                  'Vare nr.: 5741000169548',
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
@@ -218,7 +233,7 @@ class CartPage extends StatelessWidget {
                               child: Column(
                                 children: [
                                   Icon(
-                                    CupertinoIcons.minus,
+                                    CupertinoIcons.plus,
                                     color: Colors.white,
                                   ),
                                   Text(
@@ -276,7 +291,7 @@ class CartPage extends StatelessWidget {
                               //mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 Text(
-                                  'Briller',
+                                  'Grønne Briller',
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
@@ -296,7 +311,14 @@ class CartPage extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                     color: Colors.red,
                                   ),
-                                )
+                                ),
+                                Text(
+                                  'Vare nr.: 5741000259490',
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
@@ -311,7 +333,7 @@ class CartPage extends StatelessWidget {
                               child: Column(
                                 children: [
                                   Icon(
-                                    CupertinoIcons.minus,
+                                    CupertinoIcons.plus,
                                     color: Colors.white,
                                   ),
                                   Text(
@@ -368,7 +390,7 @@ class CartPage extends StatelessWidget {
                               //mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 Text(
-                                  'Briller',
+                                  'Røde Briller',
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
@@ -388,7 +410,14 @@ class CartPage extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                     color: Colors.red,
                                   ),
-                                )
+                                ),
+                                Text(
+                                  'Vare nr.: 5741000900016',
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
@@ -403,7 +432,7 @@ class CartPage extends StatelessWidget {
                               child: Column(
                                 children: [
                                   Icon(
-                                    CupertinoIcons.minus,
+                                    CupertinoIcons.plus,
                                     color: Colors.white,
                                   ),
                                   Text(
@@ -530,6 +559,11 @@ class CartPage extends StatelessWidget {
                               ],
                             ),
                           ),
+                          MaterialButton(
+              onPressed: () {},
+              color: Colors.blue,
+              child: const Text('Gå til betaling', style: TextStyle(color: Colors.white),),
+            ),
                         ],
                       ),
                     ),
